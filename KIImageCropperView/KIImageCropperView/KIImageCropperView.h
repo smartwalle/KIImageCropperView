@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+
+// pod 'KIAdditions/UIImage', :git => "https://github.com/smartwalle/KIAdditions.git"
 #import "UIImage+KIAdditions.h"
 
 /*宽、高比例*/
