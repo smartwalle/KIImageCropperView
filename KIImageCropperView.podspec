@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.source_files  = "KIImageCropperView/KIImageCropperView/*.{h,m}"
   s.framework     = "UIKit"
   s.requires_arc  = true
-  ss.dependency "KIAdditions/UIImage"
+  s.dependency "KIAdditions/UIImage"
 end
