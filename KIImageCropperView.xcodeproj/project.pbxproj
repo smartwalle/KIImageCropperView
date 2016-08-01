@@ -15,6 +15,7 @@
 		18699C881BE9A819009E2340 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18699C861BE9A819009E2340 /* LaunchScreen.xib */; };
 		18699C941BE9A819009E2340 /* KIImageCropperViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18699C931BE9A819009E2340 /* KIImageCropperViewTests.m */; };
 		18699CA01BE9A849009E2340 /* KIImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18699C9F1BE9A849009E2340 /* KIImageCropperView.m */; };
+		5AED3E6E1238D64A18374E23 /* libPods-KIImageCropperView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6F9D11B5DFB02AA174319B /* libPods-KIImageCropperView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,9 @@
 		18699C931BE9A819009E2340 /* KIImageCropperViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIImageCropperViewTests.m; sourceTree = "<group>"; };
 		18699C9E1BE9A849009E2340 /* KIImageCropperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIImageCropperView.h; sourceTree = "<group>"; };
 		18699C9F1BE9A849009E2340 /* KIImageCropperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIImageCropperView.m; sourceTree = "<group>"; };
+		41F9E61FA1D84E23B5E7F3CF /* Pods-KIImageCropperView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIImageCropperView.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIImageCropperView/Pods-KIImageCropperView.release.xcconfig"; sourceTree = "<group>"; };
+		9F6F9D11B5DFB02AA174319B /* libPods-KIImageCropperView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIImageCropperView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD77235985308D94BBF737F7 /* Pods-KIImageCropperView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIImageCropperView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIImageCropperView/Pods-KIImageCropperView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AED3E6E1238D64A18374E23 /* libPods-KIImageCropperView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,8 @@
 				18699C761BE9A819009E2340 /* KIImageCropperView */,
 				18699C901BE9A819009E2340 /* KIImageCropperViewTests */,
 				18699C751BE9A819009E2340 /* Products */,
+				EAD05A8C313666CCA242686F /* Pods */,
+				33E7A0144128E46208F69F14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = KIImageCropperView;
 			sourceTree = "<group>";
 		};
+		33E7A0144128E46208F69F14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F6F9D11B5DFB02AA174319B /* libPods-KIImageCropperView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAD05A8C313666CCA242686F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD77235985308D94BBF737F7 /* Pods-KIImageCropperView.debug.xcconfig */,
+				41F9E61FA1D84E23B5E7F3CF /* Pods-KIImageCropperView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18699C971BE9A819009E2340 /* Build configuration list for PBXNativeTarget "KIImageCropperView" */;
 			buildPhases = (
+				CF652B7938BFD375608871F9 /* 📦 Check Pods Manifest.lock */,
 				18699C701BE9A819009E2340 /* Sources */,
 				18699C711BE9A819009E2340 /* Frameworks */,
 				18699C721BE9A819009E2340 /* Resources */,
+				856824F17D38510664F2797D /* 📦 Embed Pods Frameworks */,
+				2206E430280052E252DFE5B1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,6 +253,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2206E430280052E252DFE5B1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIImageCropperView/Pods-KIImageCropperView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856824F17D38510664F2797D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIImageCropperView/Pods-KIImageCropperView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF652B7938BFD375608871F9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18699C701BE9A819009E2340 /* Sources */ = {
@@ -355,6 +430,7 @@
 		};
 		18699C981BE9A819009E2340 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD77235985308D94BBF737F7 /* Pods-KIImageCropperView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KIImageCropperView/Info.plist;
@@ -366,6 +442,7 @@
 		};
 		18699C991BE9A819009E2340 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F9E61FA1D84E23B5E7F3CF /* Pods-KIImageCropperView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KIImageCropperView/Info.plist;
@@ -428,6 +505,7 @@
 				18699C991BE9A819009E2340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18699C9A1BE9A819009E2340 /* Build configuration list for PBXNativeTarget "KIImageCropperViewTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +514,7 @@
 				18699C9C1BE9A819009E2340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
